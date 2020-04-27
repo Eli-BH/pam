@@ -1,0 +1,209 @@
+*{
+    padding: 0px; 
+    margin: 0; 
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+}
+header{
+    position: fixed;
+    z-index: 1;
+    background-color: #09152B;
+    top: 0;
+}
+
+body{
+    background-color: #09152B;
+    color:white;
+    margin:0; 
+    padding:0; 
+    width:100%;
+    height:100%;
+    font-family: Arial, Helvetica, sans-serif; 
+    scroll-behavior: smooth;
+}
+
+.left{
+    float:left; 
+    width: 8%;
+    height: 100vh;
+    background-color: #244c59;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+    border-right: solid 2px white;
+}
+
+.right{
+    float:right; 
+    width: 8%;
+    height: 100vh;
+    background-color: #244c59;
+    top: 0;
+    right: 0; 
+    position: fixed;
+    z-index: -1;
+    border-left: solid 2px white;
+}
+.execs{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+}
+#page-logo{
+    margin-top:10px;
+    max-width: 17%;
+    margin-left: 40%;
+}
+
+.navigation{
+    width: 100%;
+    display: block;
+    background-color: darkcyan;
+    text-align: center; 
+}
+
+.navigation ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navigation li{
+    display: inline;
+}
+
+.navigation a{  
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left:5em;
+    padding-right:5em ;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.navigation a:hover{
+    display: block;
+    background-color: white;
+    color: black;
+    border: 0px;
+    border-radius: 25px;
+}
+
+.eli_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "eli_profile eli_profile pic_1 pic_2" "eli_profile eli_profile pic_3 pic_4";
+}
+
+.eli_profile{
+    grid-area: eli_profile;
+    
+}
+.eli_profile img{
+    width: 400px;
+    height: auto;
+    border: solid 4px white;
+    border-radius: 30px ;
+}
+
+.pic_1 { 
+    grid-area: pic_1; 
+}
+
+.pic_2 { 
+    grid-area: pic_2; 
+}
+
+.pic_3 { 
+    grid-area: pic_3; 
+}
+
+.pic_4 { 
+    grid-area: pic_4; 
+}
+
+.pic_1 img, .pic_2 img, .pic_3 img, .pic_4 img{
+    width: 250px;
+    height: 250px;
+    border: solid 4px white;
+    border-radius:50px;
+}
+
+.pic_1 img:hover, .pic_2 img:hover, .pic_3 img:hover, .pic_4 img:hover{
+    animation-name: expand;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+p{
+    font-size: 36px;
+    padding: 10px;
+}
+
+
+
+.david_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "david_profile david_profile david_pic1 david_pic2" "david_profile david_profile david_pic3 david_pic4";
+}
+
+.david_profile{
+    grid-area: david_profile;
+    
+}
+
+.david_profile img{
+    width: 400px;
+    height: auto;
+    border: solid 4px white;
+    border-radius: 30px ;
+}
+.david_pic1 { 
+    grid-area: david_pic1; 
+}
+
+.david_pic2 { 
+    grid-area: david_pic2; 
+}
+
+.david_pic3 { 
+    grid-area: david_pic3; 
+}
+
+.david_pic4 { 
+    grid-area: david_pic4; 
+}
+
+.david_pic1 img, .david_pic2 img, .david_pic3 img, .david_pic4 img{
+    width: 250px;
+    height: 250px;
+    border: solid 4px white;
+    border-radius:50px;
+}
+
+.david_pics{
+    width: 100%;
+    height: 100vh;
+}
+.eli_pics{
+    width: 100%;
+    height: 100vh;
+}
+
+.eli_profile img:hover, .david_profile img:hover, .david_pic1 img:hover, .david_pic2 img:hover, .david_pic3 img:hover, .david_pic4 img:hover{
+    animation-name: expand;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes expand{
+    100%{
+        border-color: blue;
+    }
+}

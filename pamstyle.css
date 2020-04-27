@@ -1,0 +1,63 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-color: #09152B;
+    color:white;
+    margin:0; 
+    padding:0; 
+    width:100%;
+    height:100%; 
+}
+
+.logo{
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    min-width: 852px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#core{
+    
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 75%;
+    min-width: 855px;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#spin{
+    width: 25%;
+    min-width: 284px;
+    min-height: 281.63px;
+    position: absolute;
+    left: 2.8%;
+    top:13.3%;
+    z-index: 2;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#spin:hover{
+    animation-name: spin;
+    animation-duration: 2s;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#page-logo{
+    transform:scale(.1)
+}
+
